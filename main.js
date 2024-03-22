@@ -55,19 +55,19 @@ const yellowIcon = L.icon({
 });
 
 
-const marker1 = L.marker([-43.64051695659158, 172.4788262839913], { icon: blueIcon }).addTo(map)
+const marker1 = L.marker([], { icon: blueIcon }).addTo(map)
 	.bindPopup('This is where I work').openPopup();
 
-const marker2 = L.marker([-43.64383144412125, 172.49939637575176], { icon: redIcon }).addTo(map)
+const marker2 = L.marker([], { icon: redIcon }).addTo(map)
 	.bindPopup('This is where I live').openPopup();
 
-const marker3 = L.marker([-41.320211730673336, 173.22623685901635], { icon: greenIcon }).addTo(map)
+const marker3 = L.marker([], { icon: greenIcon }).addTo(map)
 	.bindPopup('This is where I grew up').openPopup();
 
-const marker4 = L.marker([-41.74603857843466, 171.56189205931997], { icon: greenIcon }).addTo(map)
+const marker4 = L.marker([], { icon: greenIcon }).addTo(map)
 	.bindPopup('This is our family bach').openPopup();
 
-const marker5 = L.marker([-43.522405944685644, 172.56241045637384], { icon: blueIcon }).addTo(map)
+const marker5 = L.marker([], { icon: blueIcon }).addTo(map)
 	.bindPopup('This is where I study').openPopup();
 
 
