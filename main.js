@@ -1,6 +1,6 @@
 
 // UPDATE THIS WITH A BETTER STARTING LATITUDE AND LONGITUDE AND ZOOM LEVEL
-const map = L.map('map').setView([-46.91407834950675, 167.87005192176042], 10);
+const map = L.map('map').setView([-46.91407834950675, 167.87005192176042], 9);
 L.control.scale().addTo(map);
 
 
