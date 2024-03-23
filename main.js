@@ -74,18 +74,9 @@ var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmcken
 	});
 geojsonLayer.addTo(map);
 
-// These are the Protected Areas that are being accessed from a 3rd party server.
-// Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
-var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
-		color: 'green',
-		fillOpacity: 0.0,
-		weight: 0.2,
-	});
-geojsonLayer.addTo(map);
-
 // These are the Track Lines that are being accessed from a 3rd party server.
 // Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
-var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
+var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/backcountrystewie/GISC403/tracksv2.geojson", {
 		color: 'green',
 		fillOpacity: 0.0,
 		weight: 0.2,
