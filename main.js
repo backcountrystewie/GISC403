@@ -1,6 +1,6 @@
 
 // UPDATE THIS WITH A BETTER STARTING LATITUDE AND LONGITUDE AND ZOOM LEVEL
-const map = L.map('map').setView([-42.497979, 172.323973], 7.1);
+const map = L.map('map').setView([-46.970266, 167.881996], 7.1);
 L.control.scale().addTo(map);
 
 
@@ -74,9 +74,18 @@ var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmcken
 	});
 geojsonLayer.addTo(map);
 
+// These are the Protected Areas that are being accessed from a 3rd party server.
+// Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
+var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
+		color: 'green',
+		fillOpacity: 0.0,
+		weight: 0.2,
+	});
+geojsonLayer.addTo(map);
+
 // These are the Track Lines that are being accessed from a 3rd party server.
 // Edit the style of these polygons (see: https://leafletjs.com/reference.html#path)
-var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/backcountrystewie/GISC403/tracksv2.geojson", {
+var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmckenzie123/GISC403/main/TA.geojson", {
 		color: 'green',
 		fillOpacity: 0.0,
 		weight: 0.2,
@@ -93,21 +102,23 @@ var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmcken
 geojsonLayer.addTo(map);
 
 
-
-
-
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
 const polygon = L.polygon([
-		[-42.22989400193747, 171.57864140636082],
-		[-42.25146114960972, 171.41356064148118],
-		[-42.15111136123324, 171.30625814430937],
-		[-41.900130860799, 171.40060092849043],
-		[-42.07912673417578, 171.59627018803897],
+		[-46.93336303207364, 167.41057953299136],
+		[-46.71695150909748, 167.5872760527958],
+		[-46.643003268529704, 167.80814670255134],
+		[-46.691505341656566, 168.02548342191076],
+		[-46.84400245036655, 168.18981118532886],
+		[-46.97678192123511, 168.2516549672604],
+		[-47.105624573260016, 168.2516549672604],
+		[-47.33005130017676, 167.49892779289357],
+		[-47.255747697252005, 167.27098928234585],
+		[-47.01052781381905, 167.555470679231],
 	],{
-		color: 'green',
-    		fillColor: 'green',
-    		fillOpacity: 0.5,
+		color: 'brown',
+    		fillColor: 'brown',
+    		fillOpacity: 0.1,
     		weight: 1,
 	}).addTo(map).bindPopup('My favourite National Park to visit');
 
@@ -117,5 +128,7 @@ function ReOrder() {
 	polygon.bringToFront();
 }
 
+
+// END OF DOCUMENT
 
 // END OF DOCUMENT
