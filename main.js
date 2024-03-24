@@ -92,7 +92,7 @@ var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmcken
 geojsonLayer.addTo(map);
 
 
-var geojsonLayer = new L.GeoJSON.ajax("https://raw.githubusercontent.com/backcountrystewie/GISC403/v10.geojson", {
+var geojsonLayer = new L.GeoJSON.ajax("https://raw.githubusercontent.com/backcountrystewie/GISC403/tracksv3.geojson", {
     style: function (feature) {
         return {
             color: 'green', // line color
