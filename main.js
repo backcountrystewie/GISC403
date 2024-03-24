@@ -91,18 +91,6 @@ var geojsonLayer = new L.GeoJSON.AJAX("https://raw.githubusercontent.com/gdmcken
 	});
 geojsonLayer.addTo(map);
 
-
-var geojsonLayer = new L.GeoJSON.ajax("https://raw.githubusercontent.com/backcountrystewie/GISC403/tracksv3.geojson", {
-    style: function (feature) {
-        return {
-            color: 'green', // line color
-            opacity: 0.8, // line opacity
-            weight: 2 // line weight
-        };
-    }
-});
-geojsonLayer.addTo(map);
-
 // This creates a polygon on your map with provided coordinates.  Edit this polygon to create your own polygon somewhere in New Zealand
 // Edit the style of this polygon (see: https://leafletjs.com/reference.html#path)
 const polygon = L.polygon([
