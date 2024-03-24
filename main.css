@@ -27,10 +27,11 @@ body {
 	margin:10px;
 }
 #description{
-	margin:10px;
-	font-size: 12pt;
-	font-family: verdana, sans-serif;
-	overflow: hidden; /* Hide overflowing content */
-    	max-height: calc(100% - 100px); /* Set max height to 100% of viewport height minus 200px */
+	margin: 20px; /* Adjust margin as needed */
+   	padding: 0; /* Remove padding */
+    	font-size: 12pt;
+    	font-family: verdana, sans-serif;
+    	overflow: hidden; /* Hide overflowing content */
+    	max-height: calc(50% - 200px); /* Set max height to 100% of viewport height minus 200px */
     	overflow-y: auto;
 }
