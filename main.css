@@ -31,6 +31,6 @@ body {
 	font-size: 12pt;
 	font-family: verdana, sans-serif;
 	overflow: hidden; /* Hide overflowing content */
-    	max-height: calc(100vh - 100px); /* Set max height to 100% of viewport height minus 200px */
+    	max-height: calc(100vh - 50px); /* Set max height to 100% of viewport height minus 200px */
     	overflow-y: auto;
 }
