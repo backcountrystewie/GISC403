@@ -4,7 +4,7 @@ html{
 }
 body {
 	position: absolute;
-	height: calc(100% - 300px);
+	height: calc(100% - 200px);
 	top: 0px;
 	margin: 0;
 	width: 100%;
@@ -27,11 +27,7 @@ body {
 	margin:10px;
 }
 #description{
-	margin: 20px; /* Adjust margin as needed */
-   	padding: 0; /* Remove padding */
-    	font-size: 12pt;
-    	font-family: verdana, sans-serif;
-    	overflow: hidden; /* Hide overflowing content */
-    	max-height: calc(100vh - 25px); /* Set max height to 100% of viewport height minus 200px */
-    	overflow-y: auto;
+	margin:20px;
+	font-size: 12pt;
+	font-family: verdana, sans-serif;
 }
